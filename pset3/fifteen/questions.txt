@@ -1,0 +1,9 @@
+questions.txt
+
+Computer Science 50
+Problem Set 3
+
+0. 3 x 3 to 9 x 9
+1. a two dimensional array
+2. greet()
+3. init, draw, move, won

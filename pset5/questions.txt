@@ -1,0 +1,16 @@
+0.  It is the longest word in english dictionary which refers to a lung desease.
+1.  Gets the resource usage
+2.  There are 16 members available in stuct rusage
+3.  Because struct rusage contains so may member of type long and two objects of type timeval, the size of each struct rusage is more than 56 bytes. 
+    So, instead of copying each rusage object for each function call, by using reference to the object, we can reduce the amount of memory used significantly 
+4.  In for loop, if file is successfully opened to file pointer fp, we read the file character by character using fgetc function.
+    While doing so, the condition in for loop checks if the pointer in fp has reached the end of file by comparing the value of character read to a constant EOF.
+    In the increment sections, inside for loop, we are reading the next character instead of doing i++ or something.
+5.  if we read using fscanf and %s, there might be spaces before or in between words which would not read the whole line completely. 
+6.  we declared these parameters as constant so that the parameters so passed in cannot be changed in any way.
+7.  I used trie to impletemnt the spellchecker. Inside each node, there is a boolean flag called is_word which checks if the characters that had been read until now forms a word or not.
+    Other than that there is a self referencing array of nodes that correspond to the 26 letter of the english alphabet and apostrophe 
+8.  2.12 sec
+9.  In the for loop, instead of doing strlen in every iteration, i saved the value of the word length in a variable so that the strlen function didn't have to go through the string everytime it was called.
+    Other than that i tried to make the program as efficient as possible in the first go.
+10. I dont' think it has got any in my opinion.

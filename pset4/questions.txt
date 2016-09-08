@@ -1,0 +1,23 @@
+0.  BMP: 16M, GIF: 256, JPEG: 16M, PNG: 256 teracolors
+1.  GIF, APNG, SVG
+2.  Lossy compression is used to compress files so that their file size becomes compromising the quality, i.e reduced information, 
+    whereas lossless compression reduces the original file format to lower file size without loss of any information.
+3.  JPEG, GIF
+4.  When a file is deleted, a flag is set to indicate that the blocks are not being used but the data remains intact until it is overwritten
+5.  To ensure that files cannot be recovered, we can delete the file and then re write the drive with garbage files or use some utility application that wipes free space. Otherwise, we can use file shredder applications to delete files.
+6.  stdint.h defines set of macros for integer types having specified widths. It also specifies limits of integer types.
+7.  an int may be 2 bytes or 4 bytes depending on pc, compiler. So, if we want exactly 32 bits for int, we can use integer types 
+    defined in stdint.h i.e. int32_t which will be precisely 32 bits long. Otherwise, on one machine long might be 32 bits and on other 64. Similarly for other unsigned and 8 bit integers. 
+8.  BYTE: 8 bits, DWORD: 32 bits, LONG: 32 bits, WORD: 16 bits
+9.  First two bytes or a WORD of a bmp file is the file type indicator which is set to "BM"
+10. bfSize: Total size of the bmp image
+    biSize: size of the BITMAPINFOHEADER, set to 40 bytes
+11. If biHeight is negative, the bitmap is stored top-down with the origin at the upper left corner.
+12. the field biBitCount specifies the number of bits per pixel (bpp)
+13. if the os fails to allocate create new files or the current user doesn't have write permissions in the working directory, then fopen might return null
+14. the third argument specifies the number of times size of 2nd argument blocks are to be read, ie. for BITMAPINFOHEADER, 1 means fread will read one BITMAPINFOHEADER of size 40bytes. 
+    And since each header type is present only once, so it makes sense.
+15. 3, since the sizeof(RGBTRIPLE) is 3, so 3*3 = 9, and when the expression is computed, it'll output 3. This indicates that 3 bytes of padding will be added to the row of pixels so that total number of bytes is multiple of 4, i.e 12
+16. fseek sets the position indicator associated with the stream to a new position.
+17. SEEK_CUR in fseek moves the pointer to the current position of File pointer
+18. some smiling guy in suit
